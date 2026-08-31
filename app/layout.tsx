@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'AP Chemistry Interactive Simulations (Unit 3.1 - 3.6)',
-  description: 'Advanced 2D & 3D Interactive Chemistry Simulation Platform',
+  description: 'Interactive 2D/3D simulations for intermolecular forces and states of matter',
 };
 
 export default function RootLayout({
