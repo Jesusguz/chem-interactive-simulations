@@ -64,6 +64,20 @@ export default function SimulationApp() {
               </div>
 
               <div className="space-y-3">
+                {currentModule.id === 'C2' && (
+                  <div className="pt-2">
+                    <button
+                      onClick={() => updateParams({ magnetEngaged: !params.magnetEngaged })}
+                      className={`w-full py-2.5 px-4 rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition-all ${
+                        params.magnetEngaged
+                          ? 'bg-red-600 text-white shadow-lg shadow-red-500/30'
+                          : 'bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700'
+                      }`}
+                    >
+                      🧲 {params.magnetEngaged ? 'Magnet Engaged (Electrons Attracted)' : 'Engage Magnet'}
+                    </button>
+                  </div>
+                )}
                 <div>
                   <div className="flex justify-between text-xs font-medium text-slate-600 mb-1">
                     <span>Temperature (Kinetic Energy)</span>
